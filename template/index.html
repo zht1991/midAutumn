@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+    <div class="wrap index">
+        <section class="logo big-logo">
+            <img src="../images/1.png" alt="">
+        </section>
+        <section class="index-btns">
+            <a href="./login.html" class="btn-shadow">参与活动</a>
+            <button class="activity-rule btn-shadow">活动规则</button>
+        </section>
+        <footer>
+            <img src="../images/2.png" alt="">
+        </footer>
+    </div>
+    <div class="rule-modal">
+        <div class="rule-content-box">
+            <div class="rule-content">
+                <img src="../images/6.png" class="rule-close" alt="">
+                <h3 class="rule-title">活动规则</h3>
+                <ul>
+                    <li>
+                        1.活动时间：2018年X月XX日-2018年X月XX日。
+                    </li>
+                    <li>
+                        2.活动仅限邀约客户参与，活动期间每个手机号每天只能参与一次。
+                    </li>
+                    <li>
+                        3.客户输入手机号、验证码后，成功支付一分钱后制作自己的专属月饼，送给后面获得奖品，百分百中奖。
+                    </li>
+                    <li>
+                        4.奖品设置：XXXXXX
+                    </li>
+                    <li>
+                        5.奖品发放方式：XXXXX
+                    </li>
+                    <li>
+                        6.活动奖品数量有限，先到先得。奖品派发完毕，则活动结束。
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="../js/common.js"></script>
+</html>
+<script>
+    $('.activity-rule').on('click',function(){
+        $('.rule-modal').fadeIn();
+    })
+    $('.rule-close').on('click',function(){
+        $('.rule-modal').fadeOut();
+    })
+    
+</script>
