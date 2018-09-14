@@ -31,10 +31,8 @@ function getDocumentPort() {
         }
     }
 }
-if (getViewPort().height < getDocumentPort().height) {
-    console.log(getViewPort().height, getDocumentPort().height);
-
-    document.getElementsByTagName('html')[0].style.height = 'auto';
+if (getViewPort().height >= getDocumentPort().height) {
+    document.getElementsByTagName('html')[0].style.height = '100%';
 }
 
 //封装遮罩层和loading

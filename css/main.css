@@ -1,8 +1,7 @@
 html,
 body {
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    /* height: 100%; */
 }
 
 .wrap {
@@ -11,24 +10,34 @@ body {
     position: relative;
     background: url(../images/3.jpg) no-repeat;
     background-size: 100%;
+    background-color: #0a1845;
+    z-index: -100;
 }
+
 .btn-shadow {
-    -moz-box-shadow: inset 0 0 20px #fff; 
-    -webkit-box-shadow: inset 0 0 20px #fff; 
+    -moz-box-shadow: inset 0 0 20px #fff;
+    -webkit-box-shadow: inset 0 0 20px #fff;
     box-shadow: inset 0 0 20px #fff;
     background: #fde14d;
     border-radius: .12rem;
+}
+
+.mb3 {
+    margin-bottom: 3rem;
 }
 
 /* 首页start */
 .index .big-logo {
     padding-top: 1rem;
 }
+
 .index-btns {
     margin-top: 1rem;
     text-align: center;
 }
-.index-btns a, .index-btns button {
+
+.index-btns a,
+.index-btns button {
     display: inline-block;
     width: 2.9rem;
     height: 0.7rem;
@@ -37,9 +46,11 @@ body {
     font-size: .34rem;
     color: #0f4a7c;
 }
+
 .index-btns button {
     margin-left: .2rem;
 }
+
 .rule-modal {
     display: none;
     width: 100%;
@@ -47,9 +58,10 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,.7);
+    background: rgba(0, 0, 0, .7);
     z-index: 10;
 }
+
 .rule-content-box {
     width: 100%;
     height: 8.98rem;
@@ -57,6 +69,7 @@ body {
     background: url(../images/4.png) no-repeat center top;
     background-size: 5.99rem 8.98rem;
 }
+
 .rule-content {
     width: 4.99rem;
     height: 7.53rem;
@@ -64,13 +77,15 @@ body {
     padding: 1.45rem .65rem 1.4rem 1rem;
     position: relative;
 }
+
 .rule-content img {
     width: .36rem;
     height: .36rem;
     position: absolute;
     right: .6rem;
-    top: 1rem; 
+    top: 1rem;
 }
+
 .rule-content h3 {
     text-align: center;
     font-size: .34rem;
@@ -80,10 +95,12 @@ body {
     bottom: .02rem;
     margin-bottom: .4rem;
 }
+
 .rule-content li {
     font-size: .24rem;
     color: #feffff;
 }
+
 /* 首页end */
 
 /* 登录页start */
@@ -94,7 +111,6 @@ body {
 
 .big-logo img {
     width: 7.1rem;
-    height: 6.7rem;
 }
 
 .login-form {
@@ -117,6 +133,7 @@ body {
 .check-code-area {
     margin-top: .2rem;
 }
+
 .check-code-area input {
     width: 4rem;
 }
@@ -130,6 +147,7 @@ body {
     text-align: center;
     line-height: 1rem;
 }
+
 .pay-btn {
     display: block;
     width: 6.4rem;
@@ -140,13 +158,198 @@ body {
     margin: .2rem auto;
     line-height: 1rem;
 }
+
 /* 登录页end */
 footer {
     width: 100%;
 }
+
 footer img {
     width: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
+    z-index: -10;
 }
+
+/* 制作月饼页面 start*/
+.make-page .logo img {
+    width: 5.79rem;
+    height: 4.96rem;
+    margin-left: 1rem;
+}
+
+.product-area {
+    margin-top: -1rem;
+}
+
+.product-tip {
+    width: 100%;
+    height: 1.36rem;
+    font-size: .3rem;
+    line-height: 1.36rem;
+    color: #164f7f;
+    background: url(../images/25.png) no-repeat .9rem center;
+    background-size: 6.3rem 1.36rem;
+    text-align: center;
+    font-weight: normal;
+}
+
+.product-tip span {
+    color: #e57e00;
+}
+
+.product-operation {
+    margin-top: .4rem;
+}
+
+.product-operation ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 .3rem 0 .5rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.product-operation ul li {
+    float: left;
+    text-align: center;
+}
+
+.product-operation ul li div.stuffing {
+    width: 1.96rem;
+    height: 1.52rem;
+    background: url(../images/17.png) no-repeat;
+    background-size: 100%;
+    padding-top: .25rem;
+}
+.product-operation ul li div.stuffing.cake-mold {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-top: 0;
+    background: url(../images/15.png) no-repeat;
+    background-size: 100%;
+}
+
+.product-operation ul li:nth-child(1) img {
+    width: 1.05rem;
+    height: .73rem;
+}
+.product-operation ul li:nth-child(2) img {
+    width: 1.05rem;
+    height: .73rem;
+}
+.product-operation ul li:nth-child(3) img {
+    width: .95rem;
+    height: .79rem;
+}
+.product-operation ul li:nth-child(4) img {
+    width: .92rem;
+    height: .81rem;
+}
+.product-operation ul li:nth-child(1) img {
+    width: 1.05rem;
+    height: .73rem;
+}
+.product-operation ul li:nth-child(6) img {
+    width: .92rem;
+    height: .81rem;
+}
+.product-operation ul li:nth-child(7) img {
+    width: 1.1rem;
+    height: .77rem;
+}
+.product-operation ul li:nth-child(8) img {
+    width: 1.08rem;
+    height: .77rem;
+}
+.product-operation ul li:nth-child(9) img {
+    width: 1.06rem;
+    height: .75rem;
+}
+.product-operation ul li div.stuffing p {
+    font-size: .28rem;
+    color: #1d5483;
+    margin-top: -.2rem;
+}
+.cook-btn {
+    margin-top: .4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.cook-btn button {
+    font-size: .34rem;
+    color: #0f4a7c;
+    padding: .1rem .3rem;
+}
+/* 制作月饼页面 end */
+
+/* 制作结果页面start */
+.result {
+    margin-top: -.3rem;
+}
+.cook-result-logo img {
+    width: 4.5rem;
+}
+.moon-cake {
+    text-align: center;
+}
+.moon-cake img {
+    width: 3.7rem;
+    height: 3.7rem;
+}
+.result-btn {
+    text-align: center;
+    margin-top: .6rem;
+}
+.result-btn a {
+    display: inline-block;
+    width: 2.9rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    text-align: center;
+    font-size: .34rem;
+    color: #0f4a7c;
+}
+.result-btn a + a {
+    margin-left: 0.2rem;
+}
+.result-operate-desc {
+    margin-top: 0.5rem;
+}
+.result-operate-desc h3 {
+    position: relative;
+    text-align: center;
+}
+.result-operate-desc h3 span {
+    font-size: .28rem;
+    color: #fff;
+}
+.result-operate-desc h3 span:before, .result-operate-desc h3 span:after {
+    content:'';
+    width: .28rem;
+    height: .26rem;
+    background-image: url(../images/9.png);
+    background-size: .28rem .26rem;
+    position: absolute;
+    z-index: 100;
+    top: 5px;
+}
+.result-operate-desc h3 span:before {
+    left: 2.8rem;
+}
+ .result-operate-desc h3 span:after {
+    left: 4.44rem;
+ }
+/* 制作结果页面end */
+
+
+/* 活动尚未开启,活动已结束start */
+.activity-status-sign {
+    text-align: center;
+}
+
+.activity-status-sign img {
+    width: 5.29rem;
+}
+/* 活动尚未开启,活动已结束end */
