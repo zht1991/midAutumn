@@ -1,9 +1,10 @@
 html,
 body {
     width: 100%;
-    /* height: 100%; */
 }
-
+body {
+    height: 100%;
+}
 .wrap {
     width: 100%;
     height: 100%;
@@ -11,7 +12,7 @@ body {
     background: url(../images/3.jpg) no-repeat;
     background-size: 100%;
     background-color: #0a1845;
-    z-index: -100;
+    z-index: 1;
 }
 
 .btn-shadow {
@@ -169,7 +170,7 @@ footer img {
     position: absolute;
     left: 0;
     bottom: 0;
-    z-index: -10;
+    z-index: 10;
 }
 
 /* 制作月饼页面 start*/
@@ -181,6 +182,8 @@ footer img {
 
 .product-area {
     margin-top: -1rem;
+    position: relative;
+    z-index: 1000;
 }
 
 .product-tip {
@@ -212,8 +215,15 @@ footer img {
 }
 
 .product-operation ul li {
+    width: 1.96rem;
+    height: 1.52rem;
     float: left;
     text-align: center;
+    position: relative;
+}
+.product-operation ul li.mold-box {
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .product-operation ul li div.stuffing {
@@ -222,6 +232,7 @@ footer img {
     background: url(../images/17.png) no-repeat;
     background-size: 100%;
     padding-top: .25rem;
+    position: absolute;
 }
 .product-operation ul li div.stuffing.cake-mold {
     width: 2.5rem;
