@@ -52,7 +52,7 @@ body {
     margin-left: .2rem;
 }
 
-.rule-modal {
+.rule-modal, .character-desc, .award {
     display: none;
     width: 100%;
     height: 100%;
@@ -62,12 +62,11 @@ body {
     background: rgba(0, 0, 0, .7);
     z-index: 10;
 }
-
 .rule-content-box {
     width: 100%;
     height: 8.98rem;
     margin-top: 1.5rem;
-    background: url(../images/4.png) no-repeat center top;
+    background: url(../images/4.png) no-repeat .6rem top;
     background-size: 5.99rem 8.98rem;
 }
 
@@ -79,11 +78,11 @@ body {
     position: relative;
 }
 
-.rule-content img {
+.rule-content > img {
     width: .36rem;
     height: .36rem;
     position: absolute;
-    right: .6rem;
+    right: .8rem;
     top: 1rem;
 }
 
@@ -353,6 +352,179 @@ footer img {
     left: 4.44rem;
  }
 /* 制作结果页面end */
+
+/* 月饼赠送页面start */
+.change, .houyi, .wugang {
+    text-align: center;
+}
+.change img {
+    width: 1.85rem;
+    height: 2.2rem;
+    margin-top: -.5rem;
+}
+.character span, .houyi span, .wugang span {
+    display: block;
+    width: 1.85rem;
+    height: .5rem;
+    font-size: .24rem;
+    color: #0f4a7c;
+    text-align: center;
+    letter-spacing: .4rem;
+    padding-left: .4rem;
+    margin: 0 auto;
+    margin-top: -.2rem;
+}
+.two-men {
+    height: 3.7rem;
+    position: relative;
+    margin-bottom: 2.4rem;
+    z-index: 100;
+}
+.houyi {
+    width: 2.5rem;
+    height: 2.6rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: .2rem;
+}
+.houyi img {
+    width: 1.74rem;
+    height: 2.16rem;
+}
+.houyi span {
+    width: 1.74rem;
+}
+.gift-cake {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: .2rem auto;
+}
+.gift-cake img {
+    width: 100%;
+    height: 100%;
+}
+.wugang {
+    width: 2.58rem;
+    height: 2.75rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: .1rem;
+}
+.wugang img {
+    width: 2.2rem;
+    height: 2.3rem;
+}
+.wugang span {
+    width: 1.8rem;
+}
+/* 月饼赠送页面end */
+
+/* 人物介绍 start */
+.character-desc-content-box {
+    width: 100%;
+    height: 9.98rem;
+    margin-top: 1.5rem;
+    background: url(../images/4.png) no-repeat .6rem top;
+    background-size: 5.99rem 9.98rem;
+}
+.character-desc-content {
+    width: 5.5rem;
+    height: 7.53rem;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 1.65rem;
+}
+.character-desc-content > img {
+    width: .36rem;
+    height: .36rem;
+    position: absolute;
+    right: .2rem;
+    top: 1rem;
+}
+
+.character-desc-content h3 {
+    text-align: center;
+    font-size: .34rem;
+    color: #fefefe;
+    position: relative;
+    left: .06rem;
+    bottom: .02rem;
+    margin-bottom: .4rem;
+}
+.character-desc .desc-content {
+    width: 100%;
+}
+.character-desc .desc-content img {
+    width: 2.4rem;
+    margin-top: 1rem;
+}
+.character-desc .desc-content p {
+    width: 3rem;
+    float: right;
+    font-size: .24rem;
+    color: #fff;
+}
+/* 人物介绍 end */
+
+/* 获奖情况 start */
+.award {
+    display: block;
+}
+.award-bg {
+    width: 6.49rem;
+    height: 7.25rem;
+    margin: 2.5rem auto 0;
+    background: url(../images/8.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    padding-top: 1rem;
+}
+.award-bg .cake-icon {
+    width: 2.36rem;
+    height: 2.02rem;
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.close-award-modal {
+    width: .36rem;
+    height: .36rem;
+    position: absolute;
+    right: .3rem;
+    top: 0.3rem;
+}
+.award-bg h3 {
+    width: 5rem;
+    text-align: center;
+    font-size: .34rem;
+    color: #fefefe;
+    position: relative;
+    left: .06rem;
+    bottom: .02rem;
+    margin: 0 auto;
+    margin-bottom: .4rem;
+}
+.award-mid img {
+    width: 2.4rem;
+    float: left;
+}
+.award-mid .award-text {
+    padding-top: .5rem;
+}
+.award-mid .award-text h4 {
+    font-size: .34rem;
+    color: #fefefe;
+    margin-bottom: .4rem;
+}
+.award-mid .award-text p {
+    font-size: .24rem;
+    color: #fefefe;
+    margin-bottom: .4rem;
+}
+/* 获奖情况 end */
 
 
 /* 活动尚未开启,活动已结束start */
