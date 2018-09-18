@@ -219,68 +219,54 @@ footer img {
     float: left;
     text-align: center;
     position: relative;
-}
-.product-operation ul li.mold-box {
-    width: 2.5rem;
-    height: 2.5rem;
-}
-
-.product-operation ul li div.stuffing {
-    width: 1.96rem;
-    height: 1.52rem;
     background: url(../images/17.png) no-repeat;
     background-size: 100%;
     padding-top: .25rem;
-    position: absolute;
+    margin-top: .2rem;
 }
-.product-operation ul li div.stuffing.cake-mold {
-    width: 2.5rem;
-    height: 2.5rem;
+.product-operation ul li:nth-child(2) {
+    margin-left: .2rem;
+    margin-right: .2rem;
+}
+.product-operation ul li.mold-box {
+    background-image: none;
     padding-top: 0;
-    background: url(../images/15.png) no-repeat;
-    background-size: 100%;
 }
 
-.product-operation ul li:nth-child(1) img {
-    width: 1.05rem;
+.product-operation ul li .stuffing {
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.product-operation ul li div.cake-mold {
+    z-index: 10;
+}
+
+.product-operation ul li img {
     height: .73rem;
 }
-.product-operation ul li:nth-child(2) img {
-    width: 1.05rem;
-    height: .73rem;
+.product-operation ul li div.cake-mold img {
+    height: 2rem;
+    position: absolute;
+    top: -.2rem;
 }
-.product-operation ul li:nth-child(3) img {
-    width: .95rem;
-    height: .79rem;
+.product-operation ul li div.cake-mold img:nth-child(1) {
+    left: -.8rem;
 }
-.product-operation ul li:nth-child(4) img {
-    width: .92rem;
-    height: .81rem;
+.product-operation ul li div.cake-mold img:nth-child(2) {
+    right: -.8rem;
 }
-.product-operation ul li:nth-child(1) img {
-    width: 1.05rem;
-    height: .73rem;
+.product-operation ul li div.cake-mold img:nth-child(3) {
+    height: .44rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1.3rem;
 }
-.product-operation ul li:nth-child(6) img {
-    width: .92rem;
-    height: .81rem;
-}
-.product-operation ul li:nth-child(7) img {
-    width: 1.1rem;
-    height: .77rem;
-}
-.product-operation ul li:nth-child(8) img {
-    width: 1.08rem;
-    height: .77rem;
-}
-.product-operation ul li:nth-child(9) img {
-    width: 1.06rem;
-    height: .75rem;
-}
-.product-operation ul li div.stuffing p {
+.product-operation ul li p {
     font-size: .28rem;
     color: #1d5483;
-    margin-top: -.2rem;
+    margin-top: .7rem;
 }
 .cook-btn {
     margin-top: .4rem;
@@ -291,6 +277,9 @@ footer img {
     font-size: .34rem;
     color: #0f4a7c;
     padding: .1rem .3rem;
+}
+.cook-btn button + button {
+    margin-left: 1rem;
 }
 /* 制作月饼页面 end */
 

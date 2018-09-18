@@ -12,6 +12,7 @@ var cur = {
     x: 0,
     y: 0
 }
+addForEachToNodeList();
 
 var nx=0, ny=0, dx=0, dy=0, x=0, y=0;
 function down() {
@@ -29,10 +30,6 @@ function move(ele) {
         y = dy + ny;
         ele.style.left = x + "px";
         ele.style.top = y + "px";
-        // //阻止页面的滑动默认事件
-        // document.addEventListener("touchmove", function () {
-        //     event.preventDefault();
-        // }, { passive:false });
     }
 }
 //鼠标释放时候的函数
@@ -40,6 +37,8 @@ function end() {
     flag = false;
 }
 
+
+// 计算元素相对于文档左侧的偏移量
 function getElementLeft(element) {
     var actualLeft = element.offsetLeft;
     var current = element.offsetParent;
@@ -50,6 +49,7 @@ function getElementLeft(element) {
     }
     return actualLeft;
 }
+// 计算元素相对于文档顶部的偏移量
 function getElementTop(element) {
     var actualTop = element.offsetTop;
     var current = element.offsetParent;
@@ -75,3 +75,16 @@ stuffings.forEach(function(val,index){
     },false);
 })
 
+/**
+ * 为nodelist添加forEach函数
+ */
+function addForEachToNodeList () {
+    if (window.NodeList && !NodeList.prototype.forEach) {
+        NodeList.prototype.forEach = function (callback, thisArg) {
+            thisArg = thisArg || window
+            for (var i = 0; i < this.length; i++) {
+                callback.call(thisArg, this[i], i, this)
+            }
+        }
+    }
+}
